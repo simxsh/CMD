@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width", initial-scale=1>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script type="text/javascript" src="/lib/login.js"></script>
+	<script type="text/javascript" src="/lib/backbone.js"></script>
+</head>
+<body>
+<div data-role="page" id="page-login">
+	<div data-role="header">
+		<h1> Curtin Moodle </h1>
+	</div>
+	
+	<div data-role="main" class="ui-content">
+		<form id="submitForm" class="login_form" method="post" action="http://moodle.curtin.edu.my/login/index.php">
+		<p>
+			<input type="text" name="username" autocorrect="off" autocapitalize="off" placeholder="Username">
+		</p>
+		<p>
+			<input type="password" name="password" autocorrect="off" autocapitalize="off" placeholder="Password">
+		</p>
+			<input type="checkbox" name="rememberme" id="rem_me_checkbox" class="custom">
+			<label for="rem_me_checkbox">Remember Me!</label>
+		<p>
+			<input type="submit" name="submit" value="Submit">
+		</p>
+		<p>
+			<input type="reset" name="reset" value="Reset">
+		</p>
+		</form>
+	</div>
+	
+	<div data-role="footer">
+		<h1> Version 1.00 </h1>
+	</div>
+</div>
+</body>
+</html>
